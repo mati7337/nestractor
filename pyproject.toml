@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nestractor"
+description = "Extract CHR ROM tiles from NES games in the iNES format"
+version = "1.0"
+dependencies = [
+	"pillow"
+]
+
+[project.scripts]
+nestractor = "nestractor.__init__:cli"
